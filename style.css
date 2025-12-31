@@ -1,0 +1,37 @@
+:root{
+    --color-white: #FFFFFF;
+    --color-white-medium: #F2F2F5;
+
+    --color-blue-deep: #3A3A50;
+    --color-blue-medium: #4A4A5E;
+    --color-gray-blue: #65657A;
+
+    --color-blue: #90D0F0;
+    --color-blue-soft: #A8D8F0;
+
+    --color-purple: #6B46C1;
+    --color-purple-soft: #BFABE5;
+
+    --color-pink: #DF54D4;
+
+    --color-green-light: #C8E6D0;
+
+    --font-family: 'Poppins', sans-serif;
+}
+
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    line-height: 1.5;
+}
+
+html,
+body{
+    height: 100%;
+}
