@@ -6,227 +6,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfiniTEA</title>
 
+    <link rel="stylesheet" href="/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
 </head>
 
 <body>
     <main>
-        <h1>Sua carreira, seu jeito</h1>
-        <p>Conectamos pessoas autistas a oportunidades de trabalho em ambientes inclusivos e acolhedores</p>
-        <nav>
-            <span>icone1</span>
-            <input type="text" placeholder="Cargo ou palavra-chave">
+        <section class="pg-inicial">
+            <div class="homepg">
+                <h1>Sua carreira, seu jeito</h1>
+                <p>Conectamos pessoas autistas a oportunidades de trabalho em ambientes inclusivos e acolhedores</p>
+            </div>
+            <nav>
+                <div class="cargo">
+                    <span><i class="fi fi-rr-briefcase-blank"></i></span>
+                    <input type="text" placeholder="Cargo ou palavra-chave">
+                </div>
+                <div class="local">
+                    <span><i class="fi fi-rr-marker"></i></span>
+                    <input type="text" placeholder="Cidade ou estado">
+                </div>
+                <button><span><i class="fi fi-rr-search"></i></span> Buscar vagas</button>
+            </nav>
 
-            <span>icone2</span>
-            <input type="text" placeholder="Cidade ou estado">
+            <div class="tagbut">
+                <button class="but-tec">Tecnologia</button>
+                <button class="but-adm">Administrativo</button>
+                <button class="but-rem">Remoto</button>
+                <button class="but-dsg">Design</button>
+            </div>
 
-            <button><span>icone3</span>Buscar vagas</button>
+        </section>
 
-            <button>Tecnologia</button>
-            <button>Administrativo</button>
-            <button>Remoto</button>
-            <button>Design</button>
-        </nav>
-        <section>
+        <section class="dstq-vagas">
             <h2>Vagas em destaque</h2>
             <p>
                 Oportunidades selecionadas em empresas comprometidas com a inclusão
-
             </p>
 
-            <article>
-                <h3>Desenvolvedor Front-end</h3>
-                <button>salvar</button>
-                <p>Tech Inclusiva</p>
-                <p><span>local-icone</span>São Paulo, SP - Remoto
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Buscamos desenvolvedor(a) para trabalhar com React e TypeScript em ambiente colaborativo e flexível.
-                </p>
-                <ul>
-                    <li>React</li>
-                    <li>TypeScript</li>
-                    <li>Remoto</li>
-                    <li>Flexível</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+            <div class="card-vagas">
 
-            <article>
-                <h3>Analista de Dados</h3>
-                <button>salvar</button>
-                <p>Data Solutions</p>
-                <p><span>local-icone</span>Rio de Janeiro, RJ - Híbrido
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Oportunidade para analista trabalhar com visualização de dados e dashboards em equipe acolhedora.
-                </p>
-                <ul>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Power BI</li>
-                    <li>Híbrido</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                <article class="vaga-front">
 
-            <article>
-                <h3>Designer UX/UI</h3>
-                <button>salvar</button>
-                <p>Creative Studio</p>
-                <p><span>local-icone</span>Belo Horizonte, MG - Remoto
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Procuramos designer para criar experiências acessíveis e inclusivas em projetos diversos.
-                </p>
-                <ul>
-                    <li>Figma</li>
-                    <li>Acessibilidade</li>
-                    <li>UX Research</li>
-                    <li>Remoto</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <div class="title-card">
+                        <h3>Desenvolvedor Front-end</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
 
-            <article>
-                <h3>Assistente Administrativo</h3>
-                <button>salvar</button>
-                <p>Empresa Modelo</p>
-                <p><span>local-icone</span>Curitiba, PR
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Vaga para profissional organizado(a) trabalhar com rotinas administrativas e documentação.
-                </p>
-                <ul>
-                    <li>Organização</li>
-                    <li>Excel</li>
-                    <li>Presencial</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <p>Tech Inclusiva</p>
 
-            <article>
-                <h3>Suporte Técnico</h3>
-                <button>salvar</button>
-                <p>TechSupport+</p>
-                <p><span>local-icone</span>Porto Alegre, RS - Remoto
-                    <span>periodo-icone</span>Meio Período
-                </p>
-                <p>
-                    Atendimento técnico remoto em ambiente estruturado com processos claros e bem definidos.
-                </p>
-                <ul>
-                    <li>Atendimento</li>
-                    <li>TI</li>
-                    <li>Remoto</li>
-                    <li>Meio Período</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> São Paulo, SP - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
 
-            <article>
-                <h3>Redator de Conteúdo</h3>
-                <button>salvar</button>
-                <p>Conteúdo Digital</p>
-                <p><span>local-icone</span>São Paulo, SP - Remoto
-                    <span>periodo-icone</span>Freelancer
-                </p>
-                <p>
-                    Criação de conteúdo para blog e redes sociais, com autonomia e horários flexíveis.
-                </p>
-                <ul>
-                    <li>Redação</li>
-                    <li>SEO</li>
-                    <li>Remoto</li>
-                    <li>flexível</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <p>
+                        Buscamos desenvolvedor(a) para trabalhar com React e TypeScript em ambiente colaborativo e
+                        flexível.
+                    </p>
 
-            <article>
-                <h3>Analista de Qualidade (QA)</h3>
-                <button>salvar</button>
-                <p>Software Testing Inc.</p>
-                <p><span>local-icone</span>Brasília, DF - Remoto
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Testes de software e garantia de qualidade em projetos web com metodologias ágeis estruturadas.
-                </p>
-                <ul>
-                    <li>Testes</li>
-                    <li>Automação</li>
-                    <li>Remoto</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <ul>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Remoto</li>
+                        <li>Flexível</li>
+                    </ul>
 
-            <article>
-                <h3>Bibliotecário Digital</h3>
-                <button>salvar</button>
-                <p>Biblioteca Nacional</p>
-                <p><span>local-icone</span>São Paulo, SP
-                    <span>periodo-icone</span>Tempo integral
-                </p>
-                <p>
-                    Organização de acervos digitais e catalogação de conteúdos em ambiente calmo e previsível.
-                </p>
-                <ul>
-                    <li>Catalogação</li>
-                    <li>Arquivologia</li>
-                    <li>Presencial</li>
-                    <li>Biblioteconomia</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
 
-            <article>
-                <h3>Revisor de Textos</h3>
-                <button>salvar</button>
-                <p>Editora Palavras</p>
-                <p><span>local-icone</span>Rio de Janeiro, RJ - Remoto
-                    <span>periodo-icone</span>Freelancer
-                </p>
-                <p>
-                    Revisão ortográfica e gramatical de textos diversos com entregas flexíveis e trabalho autônomo.
-                </p>
-                <ul>
-                    <li>Revisão</li>
-                    <li>Gramática</li>
-                    <li>Remoto</li>
-                    <li>Autônomo</li>
-                </ul>
-                <button>
-                    Ver detalhes
-                </button>
-            </article>
+                </article>
 
-            <button>Ver todas as vagas</button>
+                <article class="vaga-dados">
+
+                    <div class="title-card">
+                        <h3>Analista de Dados</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Data Solutions</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Rio de Janeiro, RJ - Híbrido</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
+
+                    <p>
+                        Oportunidade para analista trabalhar com visualização de dados e dashboards em equipe
+                        acolhedora.
+                    </p>
+
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Power BI</li>
+                        <li>Híbrido</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-design">
+
+                    <div class="title-card">
+                        <h3>Designer UX/UI</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Creative Studio</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Belo Horizonte, MG - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
+
+                    <p>
+                        Procuramos designer para criar experiências acessíveis e inclusivas em projetos diversos.
+                    </p>
+
+                    <ul>
+                        <li>Figma</li>
+                        <li>Acessibilidade</li>
+                        <li>UX Research</li>
+                        <li>Remoto</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-adm">
+
+                    <div class="title-card">
+                        <h3>Assistente Administrativo</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Empresa Modelo</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Curitiba, PR</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
+
+                    <p>
+                        Vaga para profissional organizado(a) trabalhar com rotinas administrativas e documentação.
+                    </p>
+
+                    <ul>
+                        <li>Organização</li>
+                        <li>Excel</li>
+                        <li>Presencial</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-sup">
+
+                    <div class="title-card">
+                        <h3>Suporte Técnico</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>TechSupport+</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Porto Alegre, RS - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Meio Período</p>
+                    </div>
+
+                    <p>
+                        Atendimento técnico remoto em ambiente estruturado com processos claros e bem definidos.
+                    </p>
+
+                    <ul>
+                        <li>Atendimento</li>
+                        <li>TI</li>
+                        <li>Remoto</li>
+                        <li>Meio Período</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-red">
+
+                    <div class="title-card">
+                        <h3>Redator de Conteúdo</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Conteúdo Digital</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> São Paulo, SP - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Freelancer</p>
+                    </div>
+
+                    <p>
+                        Criação de conteúdo para blog e redes sociais, com autonomia e horários flexíveis.
+                    </p>
+
+                    <ul>
+                        <li>Redação</li>
+                        <li>SEO</li>
+                        <li>Remoto</li>
+                        <li>flexível</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-quali">
+
+                    <div class="title-card">
+                        <h3>Analista de Qualidade (QA)</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Software Testing Inc.</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Brasília, DF - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
+
+                    <p>
+                        Testes de software e garantia de qualidade em projetos web com metodologias ágeis estruturadas.
+                    </p>
+
+                    <ul>
+                        <li>Testes</li>
+                        <li>Automação</li>
+                        <li>Remoto</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-biblio">
+
+                    <div class="title-card">
+                        <h3>Bibliotecário Digital</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Biblioteca Nacional</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> São Paulo, SP</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Tempo integral</p>
+                    </div>
+
+                    <p>
+                        Organização de acervos digitais e catalogação de conteúdos em ambiente calmo e previsível.
+                    </p>
+
+                    <ul>
+                        <li>Catalogação</li>
+                        <li>Arquivologia</li>
+                        <li>Presencial</li>
+                        <li>Biblioteconomia</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+                <article class="vaga-text">
+
+                    <div class="title-card">
+                        <h3>Revisor de Textos</h3>
+                        <button class="savebtn"><i class="fi fi-rr-bookmark"></i></button>
+                    </div>
+
+                    <p>Editora Palavras</p>
+
+                    <div class="local-periodo">
+                        <p><span><i class="fi fi-rr-marker"></i></span> Rio de Janeiro, RJ - Remoto</p>
+                        <p><span><i class="fi fi-rr-clock-three"></i></span> Freelancer</p>
+                    </div>
+
+                    <p>
+                        Revisão ortográfica e gramatical de textos diversos com entregas flexíveis e trabalho autônomo.
+                    </p>
+
+                    <ul>
+                        <li>Revisão</li>
+                        <li>Gramática</li>
+                        <li>Remoto</li>
+                        <li>Autônomo</li>
+                    </ul>
+
+                    <button class="details-btn">
+                        Ver detalhes
+                    </button>
+
+                </article>
+
+            </div>
+
+            <button class="mais-vagas">Ver todas as vagas</button>
 
         </section>
 
@@ -237,25 +347,25 @@
                 neurodiversidade</p>
 
             <article>
-                <p>icone</p>
+                <p><i class="fi fi-rr-heart"></i></p>
                 <h4>Acolhimento</h4>
                 <p>Ambiente seguro e respeitoso, pensado para suas necessidades</p>
             </article>
 
             <article>
-                <p>icone</p>
+                <p><i class="fi fi-rr-users"></i></p>
                 <h4>Inclusão Real</h4>
                 <p>Empresas comprometidas com diversidade e acessibilidade</p>
             </article>
 
             <article>
-                <p>icone</p>
+                <p><i class="fi fi-rr-shield"></i></p>
                 <h4>Suporte Contínuo</h4>
                 <p>Acompanhamento em todas as etapas do processo seletivo</p>
             </article>
 
             <article>
-                <p>icone</p>
+                <p><i class="fi fi-rr-bullseye"></i></p>
                 <h4>Vagas Adequadas</h4>
                 <p>Oportunidades alinhadas ao seu perfil e interesses</p>
             </article>
